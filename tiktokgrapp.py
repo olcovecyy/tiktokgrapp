@@ -1,3 +1,26 @@
+import importlib.util
+import subprocess
+import sys
+
+# Kontrola knihovny tkinter
+tkinter_spec = importlib.util.find_spec("tkinter")
+tkinter_installed = tkinter_spec is not None
+
+# Kontrola knihovny pydrive
+pydrive_spec = importlib.util.find_spec("pydrive")
+pydrive_installed = pydrive_spec is not None
+
+if not tkinter_installed:
+    print("Knihovna 'tkinter' není nainstalována. Probíhá instalace...")
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "tkinter"])
+    print("Knihovna 'tkinter' byla úspěšně nainstalována.")
+
+if not pydrive_installed:
+    print("Knihovna 'pydrive' není nainstalována. Probíhá instalace...")
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "pydrive"])
+    print("Knihovna 'pydrive' byla úspěšně nainstalována.")
+
+# Pokračovat se zbytkem kódu
 from tkinter import *
 from tkinter import filedialog, messagebox
 import os
