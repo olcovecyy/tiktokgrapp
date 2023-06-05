@@ -7,7 +7,7 @@ Klikněte na tlačítko "Download" a vyberte nejnovější verzi Pythonu pro vá
 Spusťte instalační soubor a postupujte podle instrukcí.
 Stažení programu "TikTok Downloader":
 
-Otevřete webový prohlížeč a přejděte na stránku s kódem programu na platformě GitHub: https://github.com/openai/gpt-3.5-turbo
+Otevřete webový prohlížeč a přejděte na stránku s kódem programu na platformě GitHub: [https://github.com/openai/gpt-3.5-turbo](https://github.com/olcovecyy/tiktokgrapp.git)
 Klikněte na zelené tlačítko "Code" a poté na "Download ZIP".
 Rozbalte stažený ZIP soubor do libovolné složky na vašem počítači.
 Instalace knihovny PyDrive:
